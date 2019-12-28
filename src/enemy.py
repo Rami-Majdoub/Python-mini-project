@@ -3,7 +3,7 @@ from random import randint
 
 class Enemy(movingActor):
     presentation = '*'
-    def __init__(self, my_map, tile, health):
+    def __init__(self, my_map, tile = None, health = 1):
         super(Enemy, self).__init__(my_map, tile, health, True)
 
     def show(self):

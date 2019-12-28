@@ -48,7 +48,7 @@ class Map():
             c = randint(0, self.nb_columns - 1)
             r = randint(0, self.nb_rows - 1)
             tile = self.tiles[r][c]
-            if (tile.is_empty()): return tile
+            if (tile == None or tile.is_empty()): return tile
 
     
 

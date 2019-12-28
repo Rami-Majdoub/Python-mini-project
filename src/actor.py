@@ -5,6 +5,7 @@ class Actor():
         self.helth = health
         self.is_enemy = is_enemy
 
+    def show(self):pass
     def get_tile(self): return self.my_tile
     def set_tile(self, new_tile): self.my_tile = new_tile
     

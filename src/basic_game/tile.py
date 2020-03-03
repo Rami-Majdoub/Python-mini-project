@@ -1,4 +1,8 @@
 from player import Player
+from enemy import Enemy
+from block import Block
+from potion import Potion
+from door import Door
 
 class Tile():
     empty_tile = '.'
@@ -20,3 +24,14 @@ class Tile():
 
     def set_actor(self, actor): self.actor = actor
     def get_actor(self): return self.actor
+
+    # block, door, enemy, player, potion
+    def contains_block(self): return isinstance(self.actor, Block)
+    def contains_door(self): return isinstance(self.actor, Door)
+    def contains_enemy(self): return isinstance(self.actor, Enemy)
+    def contains_player(self): return isinstance(self.actor, Player)
+    def contains_potion(self): return isinstance(self.actor, Potion)
+
+
+
+    
